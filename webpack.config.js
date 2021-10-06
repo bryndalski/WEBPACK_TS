@@ -2,6 +2,10 @@ const path = require("path");
 
 module.exports = {
   entry: "./src/index.ts",
+  watchOptions: {
+    poll: true,
+    ignored: /node_modules/,
+  },
   module: {
     rules: [
       {
